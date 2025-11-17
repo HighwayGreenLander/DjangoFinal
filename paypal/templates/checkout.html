@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <h1>PayPal Checkout</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label>Amount:</label>
+      <input name="amount" value="9.99" required />
+      <label>Currency:</label>
+      <input name="currency" value="USD" required />
+      <button type="submit">Pay with PayPal</button>
+    </form>
+  </body>
+</html>

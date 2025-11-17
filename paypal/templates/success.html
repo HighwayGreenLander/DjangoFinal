@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Success</title>
+  </head>
+  <body>
+    <h1>Payment Completed 🎉</h1>
+    <p><strong>ID:</strong> {{ payment_id }}</p>
+    <p><strong>Status:</strong> {{ state }}</p>
+    <p><strong>Amount:</strong> {{ amount }} {{ currency }}</p>
+    <a href="{% url 'payments:start' %}">Back</a>
+  </body>
+</html>
